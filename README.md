@@ -1,3 +1,5 @@
+![Go](https://github.com/artheus/go-events/workflows/Go/badge.svg?branch=master)
+
 # Go Events
 
 Multi-purpose generic pub/sub event system for go applications.
