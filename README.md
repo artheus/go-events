@@ -28,6 +28,8 @@ func main() {
     defer pipe.Close()
 
     var pub, sub = pipe.Publisher(), pipe.Subscriber()
+    defer pub.Close()
+    defer sub.Close()
 
     var evt = events.Event(time.Now(), "test object")
     if err = pub.Publish(evt); err != nil {
